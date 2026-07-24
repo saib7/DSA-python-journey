@@ -29,7 +29,7 @@ Each topic has its own folder containing:
 
 ### Phase 1 — Foundations
 - [x] Big-O Notation & Complexity Analysis
-- [ ] Recursion fundamentals
+- [x] Recursion fundamentals
 
 ### Phase 2 — Linear Data Structures
 - [ ] Arrays / Lists
