@@ -1,18 +1,18 @@
-def hanoi(n, source, destination, auxiliary):
-    if n == 0:
-        return  # base case: no disks left to move, do nothing
-
-    # Step 1: move the top n-1 disks out of the way, onto the auxiliary peg
-    hanoi(n - 1, source, auxiliary, destination)
-
-    # Step 2: move the single remaining (largest) disk to its final spot
-    print(f"Move disk {n} from {source} to {destination}")
-
-    # Step 3: move the n-1 disks from the auxiliary peg onto the destination
-    hanoi(n - 1, auxiliary, destination, source)
-
-
+# Question: Given an array of integers and a number k, find the maximum sum of a contiguous subarray of size k.    
+# Example: arr = [1, 12, 3, 4, -5], k = 3 => Output: 19 (sum of subarray [12, 3, 4])
+def max_sum_subarray(arr, k):
+    window_sum = sum(arr[:k])
+    max_sum = window_sum
+    for right in range(k, len(arr)):
+        window_sum += arr[right] - arr[right - k]
+        max_sum = max(max_sum, window_sum)
+    return max_sum
 
 if __name__ == "__main__":
-    # Kick it off: move 3 disks from peg A to peg C, using peg B as helper
-    hanoi(10, 'A', 'C', 'B')
+    arr = [1, 12, 3, 4, -5]
+    k = 3
+    print(len(arr))  # Output: 5
+    for i in range (0, len(arr)):
+        print(arr[i])
+    print(max_sum_subarray(arr, k))  #  Output: 19 (sum of subarray [12, 3, 4])
+

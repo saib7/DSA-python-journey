@@ -32,8 +32,8 @@ Each topic has its own folder containing:
 - [x] Recursion fundamentals
 
 ### Phase 2 — Linear Data Structures
-- [ ] Arrays / Lists
-- [ ] Strings & string manipulation
+- [x] Arrays / Lists (with two-pointer pattern)
+- [x] Strings & string manipulation
 - [ ] Linked Lists (singly, doubly, circular)
 - [ ] Stacks
 - [ ] Queues & Deque
@@ -49,8 +49,8 @@ Each topic has its own folder containing:
 ### Phase 4 — Core Algorithms
 - [ ] Binary Search & variations
 - [ ] Sorting algorithms (Merge, Quick, Heap)
-- [ ] Two Pointers
-- [ ] Sliding Window
+- [x] Two Pointers
+- [x] Sliding Window
 - [ ] Backtracking
 - [ ] Greedy
 - [ ] Divide & Conquer
