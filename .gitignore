@@ -42,3 +42,5 @@ Thumbs.db
 # Notes / scratch work
 scratch/
 *.ipynb_checkpoints/
+
+/01-foundations/examples/testing.py
