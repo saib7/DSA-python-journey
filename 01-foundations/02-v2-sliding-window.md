@@ -110,6 +110,23 @@ right=4 'b': shrink → remove 'b', left=2, seen={c,a,b}, longest=3
 ...
 ```
 
+### 🧩 The logic chain — why this actually works
+
+It's easy to see the code moves two pointers. It's less obvious *why* that's guaranteed to give the correct, longest answer. Here's the full reasoning, broken into five small, connected steps — each one only makes sense once you accept the one before it.
+
+| # | Step | In plain words |
+|:---:|---|---|
+| 1️⃣ | **Invariant** | The window `[left, right]` always holds only **distinct** characters — never a duplicate, at any point in the run. |
+| 2️⃣ | **Maintenance** | Growing `right` by one might break that rule. If it does, shrinking `left` — one step at a time — removes the duplicate and restores the rule before moving on. |
+| 3️⃣ | **Optimality** | `left` only ever moves the **minimum** amount needed to fix the duplicate — never more. So `[left, right]` is the **biggest possible** valid window that ends exactly at `right`. |
+| 4️⃣ | **Correctness** | Since step 3 finds the best window for *every* ending point `right = 0, 1, ..., n-1`, and the true answer must end *somewhere*, the biggest window found across the whole scan **is** the true longest substring. |
+| 5️⃣ | **Complexity** | `right` moves forward `n` times total. `left` never moves backward, so it can also move forward at most `n` times total, across the *entire* run — not per step. Total work ≤ `2n` → **O(n)**. |
+
+> [!TIP]
+> Read it as a chain: **1** is the rule the algorithm protects → **2** is *how* it protects it → **3** is why protecting it *minimally* matters → **4** is why that gives the *correct* answer → **5** is why doing all of this still only costs *linear* time.
+
+---
+
 ### ⚠️ Why is it O(n) despite the nested `while`?
 
 **The amortization argument:**
