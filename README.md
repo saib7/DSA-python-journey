@@ -34,7 +34,7 @@ Each topic has its own folder containing:
 ### Phase 2 — Linear Data Structures
 - [x] Arrays / Lists (with two-pointer pattern)
 - [x] Strings & string manipulation
-- [ ] Linked Lists (singly, doubly, circular)
+- [x] Linked Lists (singly, doubly, circular)
 - [ ] Stacks
 - [ ] Queues & Deque
 - [x] Hash Tables / Dictionaries
