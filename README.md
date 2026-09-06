@@ -37,7 +37,7 @@ Each topic has its own folder containing:
 - [ ] Linked Lists (singly, doubly, circular)
 - [ ] Stacks
 - [ ] Queues & Deque
-- [ ] Hash Tables / Dictionaries
+- [x] Hash Tables / Dictionaries
 
 ### Phase 3 — Non-Linear Data Structures
 - [ ] Binary Trees & traversals
