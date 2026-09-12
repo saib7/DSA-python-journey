@@ -35,12 +35,12 @@ Each topic has its own folder containing:
 - [x] Arrays / Lists (with two-pointer pattern)
 - [x] Strings & string manipulation
 - [x] Linked Lists (singly, doubly, circular)
-- [ ] Stacks
-- [ ] Queues & Deque
+- [x] Stacks
+- [x] Queues & Deque
 - [x] Hash Tables / Dictionaries
 
 ### Phase 3 — Non-Linear Data Structures
-- [ ] Binary Trees & traversals
+- [x] Binary Trees & traversals
 - [ ] Binary Search Trees
 - [ ] Heaps & Priority Queues
 - [ ] Tries
