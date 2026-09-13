@@ -41,7 +41,7 @@ Each topic has its own folder containing:
 
 ### Phase 3 — Non-Linear Data Structures
 - [x] Binary Trees & traversals
-- [ ] Binary Search Trees
+- [x] Binary Search Trees
 - [ ] Heaps & Priority Queues
 - [ ] Tries
 - [ ] Graphs (representations + BFS/DFS)
